@@ -74,6 +74,7 @@ public class TopSheet extends JFrame implements ActionListener,Serializable {
 		
 		TopSheet t = new TopSheet("Dresden Files Character Sheet");
 		t.createMenu();
+		t.setSize(600,900);
 		t.init();	
 		t.addWindowListener(new WindowAdapter(){	
 			public void windowClosing(WindowEvent e){		
@@ -107,9 +108,9 @@ public class TopSheet extends JFrame implements ActionListener,Serializable {
 		GridBagConstraints c = new GridBagConstraints();
 		
 		c.ipadx = 15;
-		c.ipady = 15;
+		c.ipady = 2;
 		c.fill = GridBagConstraints.HORIZONTAL;
-		c.insets = new Insets(5,10,5,10);
+		c.insets = new Insets(5,1,5,1);
 		//  TITLE		
 		c.gridx = 0;
 		c.gridy = row++;
