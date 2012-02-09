@@ -364,7 +364,8 @@ public class TopSheet extends JFrame implements ActionListener,Serializable {
 			s.close();
 		
 		} catch (IOException ie) {
-			ie.printStackTrace();
+			//ie.printStackTrace();
+			System.out.println("Character sheet not found: "+fname);
 		}
 		 setCursor(Cursor.getDefaultCursor());
 	}
