@@ -16,7 +16,7 @@ import javax.swing.JTextField;
 
 public class StuntsPanel extends JPanel {
 	private static final long serialVersionUID = 1L;
-	private final int NUM_STUNTS = 10;
+	private final int NUM_STUNTS = 8;
 	
 	private JTextField[] stunts = new JTextField[NUM_STUNTS];
 	private JTextField[] costs = new JTextField[NUM_STUNTS];
@@ -32,7 +32,8 @@ public class StuntsPanel extends JPanel {
 		c.gridx =0;
 		c.gridy = 0;
 		c.ipadx = 5;
-		c.insets = new Insets(5,5,5,5);
+		c.ipady = 0;
+		c.insets = new Insets(5,1,5,1);
 		setBackground(TopSheet.settings.color2);
 		
 		JLabel title = new JLabel("Stunts and Powers");
